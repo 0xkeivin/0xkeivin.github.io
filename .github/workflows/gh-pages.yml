@@ -11,6 +11,7 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
+        working-directory: ./blog
         with:
           submodules: true  # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
@@ -20,6 +21,8 @@ jobs:
         with:
           hugo-version: 'latest'
           # extended: true
+      - name: debug 
+        run: ls -alht
 
       - name: Build
         working-directory: ./blog
