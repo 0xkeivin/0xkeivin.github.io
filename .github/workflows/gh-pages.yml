@@ -24,7 +24,7 @@ jobs:
         run: ls -alht
 
       - name: Build
-        working-directory: ./blog
+        # working-directory: ./blog
         run: hugo --minify
 
       - name: Deploy
