@@ -2,6 +2,7 @@ baseURL: https://0xkeivin.github.io/blog
 languageCode: en-us
 title: Personal Blog
 theme: digitalgarden
+publishDir: docs
 
 params:
   description: "0xkeivin's Blog"
