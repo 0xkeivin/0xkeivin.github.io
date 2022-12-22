@@ -1,0 +1,31 @@
+baseURL: https://0xkeivin.github.io/
+languageCode: en-us
+title: Personal Blog
+theme: digitalgarden
+
+params:
+  description: "0xkeivin's Blog"
+  enableSearch: true
+menu:
+  main:
+    - identifier: home
+      name: Home
+      url: /
+      weight: 1
+    - name: Content
+      params:
+        header: true
+      weight: 2
+    - name: Articles
+      url: /articles
+      weight: 3
+    - name: Portfolio
+      url: /portfolio
+      weight: 4
+  social:
+    - name : GitHub
+      url : https://github.com/0xkeivin
+      weight : 1
+    - name: Twitter
+      url: 'https://twitter.com/0xkeivin'
+      weight: 1
